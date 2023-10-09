@@ -1,12 +1,36 @@
+@use "../abstracts";
+
 .logo {
     display: flex;
     align-items: center;
     gap: 14px;
+
+    // Tablet
+    @include abstracts.breakpoint(lg) {
+        // khoảng cách giữa logo icon và chữ
+        gap: 10px;
+        // khoảng cách giữa icon more và logo
+        margin-left: 39px;
+    }
 
     &__title {
         font-size: 2.2rem;
         font-style: normal;
         font-weight: 700;
         line-height: 1.45;
+
+        // Tablet
+        @include abstracts.breakpoint(lg) {
+            // fonts size title trên tablet
+            font-size: 1.8rem;
+        }
+    }
+
+    &__img {
+        // Tablet
+        @include abstracts.breakpoint(lg) {
+            // kích thước icon logo trên tablet
+            width: 24px;
+        }
     }
 }
