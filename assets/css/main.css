@@ -147,6 +147,7 @@ body {
   font-size: 1.6rem;
   font-family: "Gordita", sans-serif;
   color: var(--text-color);
+  background: var(--body-bg);
 }
 
 a {
@@ -1208,6 +1209,7 @@ html.dark {
   --text-color: #fff;
   --icon-color: brightness(0) saturate(100%) invert(100%) sepia(0%)
       saturate(7479%) hue-rotate(126deg) brightness(101%) contrast(96%);
+  --body-bg: #292e39;
   --header-bg-color: #171c28;
   --top-act-group-bg-color: #292e39;
   --top-act-group-shadow: rgba(0, 0, 0, 0.2);
@@ -1218,10 +1220,16 @@ html {
   --text-color: #1a162e;
   --icon-color: brightness(0) saturate(100%) invert(9%) sepia(36%)
       saturate(858%) hue-rotate(210deg) brightness(97%) contrast(100%);
+  --body-bg: #f6f6f6;
   --header-bg-color: #eee;
   --top-act-group-bg-color: #fff;
   --top-act-group-shadow: rgba(237, 237, 246, 0.2);
   --top-act-group-separate: #ededf6;
+}
+@media (max-width: 991.98px) {
+  html {
+    --header-bg-color: #fff;
+  }
 }
 
 .top-act__btn, .top-act__group, .top-act, .navbar__link, .navbar__list, .top-bar {
@@ -1256,7 +1264,6 @@ html {
 }
 
 .navbar {
-  display: flex;
   margin-left: 144px;
 }
 @media (max-width: 1199.98px) {
@@ -1338,7 +1345,6 @@ html {
 @media (max-width: 991.98px) {
   .logo {
     gap: 10px;
-    margin-left: 39px;
   }
 }
 .logo__title {
