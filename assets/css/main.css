@@ -1234,7 +1234,7 @@ html {
 
 .top-act__btn, .top-act__group, .top-act, .navbar__link, .navbar__list, .top-bar {
   display: flex;
-  align-self: center;
+  align-items: center;
 }
 
 .header {
