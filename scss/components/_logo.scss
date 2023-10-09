@@ -9,6 +9,12 @@
     @include abstracts.breakpoint(lg) {
         // khoảng cách giữa logo icon và chữ
         gap: 10px;
+        margin-left: 40px;
+    }
+
+    // MObile
+    @include abstracts.breakpoint(sm) {
+        margin-left: 0px;
     }
 
     &__title {
