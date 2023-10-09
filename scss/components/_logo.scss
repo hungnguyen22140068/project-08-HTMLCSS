@@ -12,8 +12,8 @@
         margin-left: 40px;
     }
 
-    // MObile
-    @include abstracts.breakpoint(sm) {
+    // Mobile
+    @include abstracts.breakpoint(md) {
         margin-left: 0px;
     }
 
