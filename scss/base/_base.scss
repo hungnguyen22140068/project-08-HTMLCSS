@@ -26,13 +26,17 @@ button {
     background: transparent;
 }
 
+a,
 button,
 input,
+img,
 textarea,
 select {
     font-family: inherit;
     font-size: inherit;
     color: inherit;
+    // Thuộc tính khi click vào không bị hightlight
+    -webkit-tap-highlight-color: transparent;
 }
 
 .icon {
