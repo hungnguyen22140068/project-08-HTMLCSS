@@ -1,7 +1,7 @@
 <div class="container">
     <div href="./" class="top-bar">
         <!-- More -->
-        <button class="top-bar__more js-toggle" toggle-target="#navbar">
+        <button class="top-bar__more d-none d-lg-block js-toggle" toggle-target="#navbar">
             <img src="./assets/icons/more.svg" alt="" class="icon top-bar__more-icon" />
         </button>
 
@@ -12,7 +12,7 @@
         </a>
 
         <!-- Navbar -->
-        <nav id="navbar" class="navbar hide">
+        <nav id="navbar" class="navbar show">
             <button class="navbar__close-btn js-toggle" toggle-target="#navbar">
                 <img src="./assets/icons/arrow-left.svg" alt="" />
             </button>
@@ -30,7 +30,7 @@
                                 <div class="top-menu__main">
                                     <!-- Menu column -->
                                     <div class="menu-column">
-                                        <div class="menu-column__icon">
+                                        <div class="menu-column__icon d-lg-none">
                                             <img
                                                 src="./assets/images/category/cate-1.1.svg"
                                                 alt=""
@@ -44,7 +44,7 @@
                                         </div>
                                         <div class="menu-column__content">
                                             <h2>
-                                                <a href="#!" class="menu-column__heading">All Departments</a>
+                                                <a href="#!" class="menu-column__heading d-lg-none">All Departments</a>
                                             </h2>
                                             <ul class="menu-column__list js-menu-list">
                                                 <li class="menu-column__item">
@@ -5051,18 +5051,19 @@
                 </li>
             </ul>
         </nav>
+
         <!-- Overlay -->
         <div class="navbar__overlay js-toggle" toggle-target="#navbar"></div>
 
         <!-- Actions -->
         <div class="top-act">
-            <div class="top-act__group top-act__group--single">
+            <div class="top-act__group d-md-none top-act__group--single">
                 <button class="top-act__btn">
                     <img src="./assets/icons/search.svg" alt="Search" class="icon top-act__icon" />
                 </button>
             </div>
 
-            <div class="top-act__group">
+            <div class="top-act__group d-md-none">
                 <button class="top-act__btn">
                     <img src="./assets/icons/heart.svg" alt="Heart" class="icon top-act__icon" />
                     <span class="top-act__title">03</span>

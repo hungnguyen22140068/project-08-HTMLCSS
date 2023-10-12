@@ -30,16 +30,6 @@
         // khoảng cách trên dưới của header
         padding: 16px 0;
     }
-
-    // Ẩn icon more trên pc
-    &__more {
-        display: none;
-
-        // Tablet hiện icon more trên Tablet
-        @include abstracts.breakpoint(lg) {
-            display: block;
-        }
-    }
 }
 
 .navbar {
@@ -103,6 +93,9 @@
         @include abstracts.breakpoint(lg) {
             flex-direction: column;
             align-items: flex-start;
+
+            overflow-y: auto;
+            height: calc(100% - 26px);
         }
     }
 
@@ -121,11 +114,6 @@
         }
 
         @include abstracts.breakpoint(lg) {
-            &:hover .dropdown {
-                opacity: 0;
-                visibility: hidden;
-            }
-
             width: 100%;
         }
     }
@@ -172,11 +160,6 @@
         border-radius: 8px;
         background: var(--top-act-group-bg-color);
         box-shadow: 0px 20px 60px 10px var(--top-act-group-shadow);
-
-        // Mobile
-        @include abstracts.breakpoint(md) {
-            display: none;
-        }
     }
 
     &__group--single {
