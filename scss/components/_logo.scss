@@ -6,14 +6,14 @@
     gap: 14px;
 
     // Tablet
-    @include abstracts.breakpoint(lg) {
+    @include abstracts.screen(lg) {
         // khoảng cách giữa logo icon và chữ
         gap: 10px;
         margin-left: 40px;
     }
 
     // Mobile
-    @include abstracts.breakpoint(md) {
+    @include abstracts.screen(md) {
         margin-left: 0px;
     }
 
@@ -24,7 +24,7 @@
         line-height: 1.45;
 
         // Tablet
-        @include abstracts.breakpoint(lg) {
+        @include abstracts.screen(lg) {
             // fonts size title trên tablet
             font-size: 1.8rem;
         }
@@ -32,7 +32,7 @@
 
     &__img {
         // Tablet
-        @include abstracts.breakpoint(lg) {
+        @include abstracts.screen(lg) {
             // kích thước icon logo trên tablet
             width: 24px;
         }
