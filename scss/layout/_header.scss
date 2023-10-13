@@ -100,21 +100,20 @@
     }
 
     &__item {
-        // &:first-child a {
-        //     padding-left: 0;
-        // }
-
-        // &:last-child a {
-        //     padding-right: 0;
-        // }
-
         &:hover .dropdown {
-            opacity: 1;
-            visibility: visible;
+            display: block;
         }
 
         @include abstracts.breakpoint(lg) {
             width: 100%;
+
+            &:hover .dropdown {
+                display: none;
+            }
+
+            &--active .dropdown {
+                display: block !important;
+            }
         }
     }
 
@@ -139,6 +138,15 @@
 
     &__arrow {
         margin-top: 3px;
+
+        @include abstracts.breakpoint(lg) {
+            rotate: -90deg;
+            transition: rotate 0.5s;
+        }
+    }
+
+    &__item--active &__arrow {
+        rotate: 0deg;
     }
 }
 
