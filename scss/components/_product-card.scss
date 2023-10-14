@@ -1,3 +1,5 @@
+@use "../abstracts";
+
 .product-card {
     height: 100%;
     padding: 16px;
@@ -27,6 +29,13 @@
 
     &__title {
         margin-top: 16px;
+
+        @include abstracts.screen(md) {
+            display: -webkit-box;
+            -webkit-line-clamp: 2; // muốn dấu 3 chấm ở hàng thứ mấy thì để số mấy
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
     }
 
     &__title,
